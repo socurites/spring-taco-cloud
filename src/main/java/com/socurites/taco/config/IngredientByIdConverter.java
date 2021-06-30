@@ -11,11 +11,11 @@ import com.socurites.taco.model.repository.IngredientRepository;
 @Configuration
 public class IngredientByIdConverter implements Converter<String, Ingredient> {
 	private IngredientRepository ingredientRepository;
-	
+
 	public IngredientByIdConverter(IngredientRepository ingredientRepository) {
 		this.ingredientRepository = ingredientRepository;
 	}
-	
+
 	@Override
 	public Ingredient convert(String id) {
 		Optional<Ingredient> optional = ingredientRepository.findById(id);
