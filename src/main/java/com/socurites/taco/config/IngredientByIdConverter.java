@@ -1,5 +1,7 @@
 package com.socurites.taco.config;
 
+import java.util.Optional;
+
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.convert.converter.Converter;
 
@@ -16,7 +18,8 @@ public class IngredientByIdConverter implements Converter<String, Ingredient> {
 	
 	@Override
 	public Ingredient convert(String id) {
-		return ingredientRepository.findById(id);
+		Optional<Ingredient> optional = ingredientRepository.findById(id);
+		return optional.isPresent() ? optional.get() : null;
 	}
 
 }
