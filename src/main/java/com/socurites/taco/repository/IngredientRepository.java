@@ -1,4 +1,4 @@
-package com.socurites.taco.model.repository;
+package com.socurites.taco.repository;
 
 import org.springframework.data.repository.CrudRepository;
 

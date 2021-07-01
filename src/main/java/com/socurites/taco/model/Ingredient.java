@@ -17,6 +17,8 @@ import java.io.Serializable;
 @Entity
 @NoArgsConstructor(access = AccessLevel.PRIVATE, force=true)
 public class Ingredient implements Serializable {
+	private static final long serialVersionUID = 1L;
+
 	@Id
 	private final String id;
 	private final String name;

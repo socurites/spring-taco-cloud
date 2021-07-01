@@ -23,13 +23,13 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.socurites.taco.model.Taco;
-import com.socurites.taco.model.repository.TacoRepository;
+import com.socurites.taco.repository.TacoRepository;
 
 @RestController
 @RequestMapping(path="/rest/design", produces = "application/json")
 @CrossOrigin(origins = "*")
 public class DesignTacoRestController {
-private final TacoRepository tacoRepository;
+	private final TacoRepository tacoRepository;
 	private static final Logger log = LoggerFactory.getLogger(DesignTacoRestController.class);
 	
 	@Autowired

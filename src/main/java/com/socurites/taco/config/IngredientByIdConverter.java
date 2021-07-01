@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.core.convert.converter.Converter;
 
 import com.socurites.taco.model.Ingredient;
-import com.socurites.taco.model.repository.IngredientRepository;
+import com.socurites.taco.repository.IngredientRepository;
 
 @Configuration
 public class IngredientByIdConverter implements Converter<String, Ingredient> {

@@ -5,11 +5,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.ManyToMany;
-import javax.persistence.PrePersist;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 import org.hibernate.annotations.ManyToAny;
 
@@ -19,7 +15,10 @@ import lombok.Data;
 @Entity
 @Table(name = "Taco_Order")
 public class Order implements Serializable {
+	private static final long serialVersionUID = 1L;
+
 	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String deliveryName;
 	private String deliveryStreet;

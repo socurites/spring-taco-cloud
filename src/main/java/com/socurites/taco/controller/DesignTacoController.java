@@ -7,7 +7,6 @@ import java.util.stream.Collectors;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -18,8 +17,8 @@ import com.socurites.taco.model.Ingredient;
 import com.socurites.taco.model.Order;
 import com.socurites.taco.model.Taco;
 import com.socurites.taco.model.Ingredient.Type;
-import com.socurites.taco.model.repository.IngredientRepository;
-import com.socurites.taco.model.repository.TacoRepository;
+import com.socurites.taco.repository.IngredientRepository;
+import com.socurites.taco.repository.TacoRepository;
 
 import lombok.extern.slf4j.Slf4j;
 
