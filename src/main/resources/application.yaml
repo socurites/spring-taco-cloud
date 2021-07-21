@@ -8,15 +8,15 @@ server:
   port: 8080
 ---
 spring:
-  thymeleaf.cache: false
   config:
     activate:
       on-profile: local
+  thymeleaf.cache: false
   datasource:
     url: jdbc:h2:mem:testdb
-  redis:
-    host: localhost
-    port: 6379
+#  redis:
+#    host: localhost
+#    port: 6379
   jpa:
     hibernate:
       ddl-auto: create-drop
@@ -27,10 +27,10 @@ logging:
     root: INFO
 ---
 spring:
-  thymeleaf.cache: true
   config:
     activate:
       on-profile: prod
+  thymeleaf.cache: true
 logging:
   level:
     root: WARN
