@@ -29,7 +29,7 @@ logging:
 spring:
   config:
     activate:
-      on-profile: prod
+      on-profile: dev
   thymeleaf.cache: true
 logging:
   level:
