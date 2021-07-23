@@ -1,4 +1,7 @@
 echo "After Install"
+
+cd /home/ec2-user/app
+
 echo "Run as `whoami` at `pwd`"
 
 echo "Build bootJar"
